@@ -1,27 +1,27 @@
 import { Empregado } from "./Empregado";
 
-export class Horista extends Empregado{
+export class Horista extends Empregado {
 
-    private valorHora : number;
+    private valorHora: number;
     private horasTrabalhadas: number;
 
-    public constructor(_nome:string,_cpf:string,_valorHora:number,_horasTrabalhadas:number){
-        super (_nome, _cpf);
+    public constructor(_nome: string, _cpf: string, _valorHora: number, _horasTrabalhadas: number) {
+        super(_nome, _cpf);
         this.valorHora = _valorHora;
         this.horasTrabalhadas = _horasTrabalhadas;
     }
 
-    public setValorHora(_valorHora:number):void{
+    public setValorHora(_valorHora: number): void {
         this.valorHora = _valorHora;
     }
-    public getValorHora ():number{
+    public getValorHora(): number {
         return this.valorHora;
     }
 
-    public setHorasTrabalhadas(_horasTrabalhadas:number):void{
+    public setHorasTrabalhadas(_horasTrabalhadas: number): void {
         this.horasTrabalhadas = _horasTrabalhadas;
     }
-    public getHorasTrablhadas ():number{
+    public getHorasTrablhadas(): number {
         return this.horasTrabalhadas;
     }
 

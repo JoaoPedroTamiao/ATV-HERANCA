@@ -1,27 +1,27 @@
 import { Empregado } from "./Empregado";
 
-export class Comissionado extends Empregado{
+export class Comissionado extends Empregado {
 
     private totalVendas: number;
     private taxaComissao: number;
 
-    public constructor(_nome:string,_cpf:string,_totalVendas:number,_taxaComissao:number){
-        super (_nome, _cpf);
+    public constructor(_nome: string, _cpf: string, _totalVendas: number, _taxaComissao: number) {
+        super(_nome, _cpf);
         this.totalVendas = _totalVendas;
         this.taxaComissao = _taxaComissao
     }
 
-    public setTotalVendas(_totalVendas:number):void{
+    public setTotalVendas(_totalVendas: number): void {
         this.totalVendas = _totalVendas;
     }
-    public getTotalVendas ():number{
+    public getTotalVendas(): number {
         return this.totalVendas;
     }
 
-    public setTaxaComissao(_taxaComissao:number):void{
+    public setTaxaComissao(_taxaComissao: number): void {
         this.taxaComissao = _taxaComissao;
     }
-    public getTaxaComissao ():number{
+    public getTaxaComissao(): number {
         return this.taxaComissao;
     }
 
@@ -29,5 +29,5 @@ export class Comissionado extends Empregado{
         return (this.totalVendas + this.taxaComissao)
     }
 
-    
+
 }

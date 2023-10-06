@@ -1,27 +1,27 @@
-export abstract class Empregado{
+export abstract class Empregado {
 
 
     private nome: string;
     private cpf: string;
 
-    public constructor(_nome:string, _cpf:string){
+    public constructor(_nome: string, _cpf: string) {
 
         this.nome = _nome;
         this.cpf = _cpf;
     }
 
-    public abstract vencimento ():number;
+    public abstract vencimento(): number;
 
-    public setNome(_nome:string):void{
+    public setNome(_nome: string): void {
         this.nome = _nome;
     }
-    public getNome ():string{
+    public getNome(): string {
         return this.nome;
     }
-    public setCPF(_cpf:string):void{
+    public setCPF(_cpf: string): void {
         this.cpf = _cpf;
     }
-    public getCPF ():string{
+    public getCPF(): string {
         return this.cpf;
     }
 }
